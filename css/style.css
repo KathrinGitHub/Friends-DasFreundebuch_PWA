@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+}
+
+/* Make content area fill the entire browser window */
+html, .fullscreen {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: rgb(2,0,36);
+  background: linear-gradient(21deg, rgba(2,0,36,1) 0%, rgba(166,228,121,1) 0%, rgba(96,145,88,1) 100%);
+}
+
+/* Center the content in the browser window */
+.container {
+  margin: auto;
+  text-align: center;
+}
+
+.custom_button {
+  background-color: #5b6f5c;
+  border: none;
+  color: white;
+  font-size: 4vw;
+  padding: 10px;
+  position:absolute;
+  bottom:0;
+  right:0;
+  left: 0;
+}
+
+.title {
+  font-size: 5vw;
+}
