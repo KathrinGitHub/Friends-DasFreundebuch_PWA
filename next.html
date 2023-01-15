@@ -1,7 +1,7 @@
 <!--
-AUTHORS: Müslüm Atas & Mathias Knoll
-DESCRIPTION: A simple website. 
-LAST CHANGE: 17.12.2022
+AUTHORS: Kathrin Hubmann & Sebastian Kurka
+DESCRIPTION: A digital friends book. 
+LAST CHANGE: 15.01.2023
 -->
 
 <!DOCTYPE html>
@@ -9,59 +9,23 @@ LAST CHANGE: 17.12.2022
 
   <head>
     <meta charset="utf-8">
-    <title>Next page</title>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Friends - Das Freundebuch</title>
+        <script defer src="main.js"></script>
+        <link rel="icon" href="img/ic_launcher_friends.png">
+        <link rel="manifest" href="manifest.json">
 
-    <link rel="icon" href="favicon.ico">
+        <meta name="application-name" content="Friends - Das Freundebuch">
+        <meta name="apple-mobile-web-app-title" content="Friends - Das Freundebuch" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="msapplication-starturl" content="index.html" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-    <!-- Manifest and Styles
-	  The manifest file lists all the information about the website in a JSON format und usually resides in the root folder of a web app -->
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- App Name -->
-    <meta name="application-name" content="Lab 05 PWA" />
-    <!-- On iOS, you can specify a web application title for the launch icon -->
-    <meta name="apple-mobile-web-app-title" content="Lab 05 PWA" />
-
-    <!-- Capability -->
-    <meta name="mobile-web-app-capable" content="yes" />
-    <!-- Hiding Safari User Interface Components in standalone mode-->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <!-- Starting URL -->
-    <meta name="msapplication-starturl" content="/index.html" />
-
-    <!-- Theme/Display -->
-    <meta name="theme-color" content="#FBFBFB"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-
-    <!-- Icon for iOS 180x180 -->
-    <link rel="apple-touch-icon" href="img/touch-icon-iphone.png">
-
-    <!-- Splash Screens for iOS 
-    <link href="img/apple_splash_2048.png" sizes="2048x2732" rel="apple-touch-startup-image" />
-    <link href="img/apple_splash_1668.png" sizes="1668x2224" rel="apple-touch-startup-image" />
-    <link href="img/apple_splash_1536.png" sizes="1536x2048" rel="apple-touch-startup-image" />
-    <link href="img/apple_splash_1125.png" sizes="1125x2436" rel="apple-touch-startup-image" />
-    <link href="img/apple_splash_1242.png" sizes="1242x2208" rel="apple-touch-startup-image" />
-    <link href="img/apple_splash_750.png" sizes="750x1334" rel="apple-touch-startup-image" />
-    <link href="img/apple_splash_640.png" sizes="640x1136" rel="apple-touch-startup-image" />
-    -->
+        <link rel="apple-touch-icon" href="img/ic_launcher_friends.png">
   </head>
 
   <body class="fullscreen">
-    <div class="container">
-      <h1 class="title">Welcome to a new page!</h1>
-
-      <input class="custom_button" type=button onClick="parent.location='index.html'" value='Back'>
-
-    </div>
-
-
-    <!-- Scripts -->
-    <script src="use_webworker.js"></script>
-    <script src="use_serviceworker.js"></script>
-    <script src="main.js"></script>
+    
   </body>
-
 </html>
