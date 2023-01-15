@@ -1,10 +1,12 @@
 body {
+
   font-family: sans-serif;
 }
 
 /* Make content area fill the entire browser window */
 html, .fullscreen {
   display: flex;
+  flex-direction: column;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -32,4 +34,92 @@ html, .fullscreen {
 
 .title {
   font-size: 5vw;
+}
+
+.header {
+  display: block;
+  background-color: rgb(231, 72 ,72);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ownProfile {
+  height: 6em;
+  width: 6em;
+}
+
+.list {
+  background-color: rgb(229, 224, 224);
+}
+
+.item {
+  margin-left: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: 4em;
+  width: 4em;
+}
+
+.item > .profileIcon {
+  margin-right: 0.5em;
+}
+
+.floatingActionButtons {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 10%;
+  align-self: end;
+}
+
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(231, 72 ,72);
+  box-shadow: 0px 2px 5px #666;
+  border-color: rgb(229, 224, 224);
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#addBtn {
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(231, 72 ,72);
+  box-shadow: 0px 2px 5px #666;
+  border-color: rgb(229, 224, 224);
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#shareBtn {
+  position: fixed;
+  bottom: 140px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(231, 72 ,72);
+  box-shadow: 0px 2px 5px #666;
+  border-color: rgb(229, 224, 224);
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
