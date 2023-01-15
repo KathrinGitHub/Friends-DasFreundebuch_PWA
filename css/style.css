@@ -37,10 +37,12 @@ html, .fullscreen {
 }
 
 .header {
-  display: block;
+  display: flex;
   background-color: rgb(231, 72 ,72);
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  justify-content: center;
+  position: sticky;
+  top: 0;
 }
 
 #ownProfile {
@@ -56,6 +58,7 @@ html, .fullscreen {
   margin-left: 1em;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 img {

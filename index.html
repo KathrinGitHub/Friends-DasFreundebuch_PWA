@@ -1,77 +1,64 @@
-<!--
-AUTHORS: Müslüm Atas & Mathias Knoll
-DESCRIPTION: A simple Progressive Web App (PWA) example which uses web- and service-workers. 
-             It consists of HTML files (index.html, next.html) with basic CSS styling (style.css), and a few images, and scripts.
-LAST CHANGE: 17.12.2022
-REFERENCES: https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps
--->
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Friends - Das Freundebuch</title>
+        <script defer src="main.js"></script>
+        <link rel="icon" href="img/ic_launcher_friends.png">
+        <link rel="manifest" href="manifest.json">
 
-  <head>
-    <meta charset="utf-8">
-    <title>Friends - Das Freundebuch</title>
+        <meta name="application-name" content="Friends - Das Freundebuch">
+        <meta name="apple-mobile-web-app-title" content="Friends - Das Freundebuch" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="msapplication-starturl" content="index.html" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-    <link rel="icon" href="favicon.ico">
-
-    <!-- Manifest and Styles
-	  The manifest file lists all the information about the website in a JSON format und usually resides in the root folder of a web app -->
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- App Name -->
-    <meta name="application-name" content="Lab-05 (PWA)" />
-    <!-- On iOS, you can specify a web application title for the launch icon -->
-    <meta name="apple-mobile-web-app-title" content="Lab-05 (PWA)" />
-
-    <!-- Capability -->
-    <meta name="mobile-web-app-capable" content="yes" />
-    <!-- Hiding Safari User Interface Components in standalone mode-->
-    <meta name="apple-mobile-web-app-capable" content="yes" /> 
-
-    <!-- Starting URL -->
-    <meta name="msapplication-starturl" content="/index.html" />
-
-    <!-- Theme/Display -->
-    <meta name="theme-color" content="white"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-
-    <!-- Icon for iOS 180x180 -->
-    <link rel="apple-touch-icon" href="img/touch-icon-iphone.png">
-
-    <!-- Splash Screens for iOS 
-    <link href="img/apple_splash_2048.png" sizes="2048x2732" rel="apple-touch-startup-image" />
-    <link href="img/apple_splash_1668.png" sizes="1668x2224" rel="apple-touch-startup-image" />
-    <link href="img/apple_splash_1536.png" sizes="1536x2048" rel="apple-touch-startup-image" />
-    <link href="img/apple_splash_1125.png" sizes="1125x2436" rel="apple-touch-startup-image" />
-    <link href="img/apple_splash_1242.png" sizes="1242x2208" rel="apple-touch-startup-image" />
-    <link href="img/apple_splash_750.png" sizes="750x1334" rel="apple-touch-startup-image" />
-    <link href="img/apple_splash_640.png" sizes="640x1136" rel="apple-touch-startup-image" />
-    -->
-  </head>
-
-  <body class="fullscreen">
-    <div class="container">
-
-      <h1 class="title">Friends - Das Freundebuch</h1>
-         
-      <!-- Web Worker  -->
-      <h2>Web Worker</h2>
-      <button onclick="sendMessageToWebworker()">Post message 'hello'.</button>
-      <button onclick="askWebworkerForRecurringTask()">Post message 'recurring task'.</button>
-      <output class="webworker"></output>
-
-      <!-- Service Worker -->
-      <h2>Service Worker</h2>
-      <output class="serviceworker"></output>
-    </div>
-
-    <input class="custom_button" type=button onClick="parent.location='next.html'" value='Next'>
-
-    <!-- Scripts -->
-    <script src="use_webworker.js"></script>
-    <script src="use_serviceworker.js"></script>
-    <script src="main.js"></script>
-  </body>
-
+        <link rel="apple-touch-icon" href="img/ic_launcher_friends.png">
+    </head>
+    <body class="fullscreen">
+        <div class="header">
+            <a href="" ><img src="img/ic_launcher_own_icon_round.png" alt="Profile" class="profileIcon" id="ownProfile"></a>
+        </div>
+        <div class="list">
+            <div class="item">
+                <img src="img/ic_launcher_own_icon_round.png" alt="Profile" class="profileIcon">
+                <p class="name">Pasqual</p>
+            </div>
+            <div class="item">
+                <img src="img/ic_launcher_own_icon_round.png" alt="Profile" class="profileIcon">
+                <p class="name">Franz</p>
+            </div>
+            <div class="item">
+                <img src="img/ic_launcher_own_icon_round.png" alt="Profile" class="profileIcon">
+                <p class="name">Harald</p>
+            </div>
+            <div class="item">
+                <img src="img/ic_launcher_own_icon_round.png" alt="Profile" class="profileIcon">
+                <p class="name">Sebastian</p>
+            </div>
+            <div class="item">
+                <img src="img/ic_launcher_own_icon_round.png" alt="Profile" class="profileIcon">
+                <p class="name">Sebastian</p>
+            </div>
+            <div class="item">
+                <img src="img/ic_launcher_own_icon_round.png" alt="Profile" class="profileIcon">
+                <p class="name">Sebastian</p>
+            </div>
+            <div class="item">
+                <img src="img/ic_launcher_own_icon_round.png" alt="Profile" class="profileIcon">
+                <p class="name">Sebastian</p>
+            </div>
+            <div class="item">
+                <img src="img/ic_launcher_own_icon_round.png" alt="Profile" class="profileIcon">
+                <p class="name">Sebastian</p>
+            </div>
+        </div>
+        <div class="floatingActionButtons">
+            <button class="fab" id="moreBtn"><img src="img/ic_launcher_add_button_round.png" alt="" class="actionBtn"></button>
+            <button class="fabS" id="addBtn"><img src="" alt="" class="actionBtn"></button>
+            <button class="fabS" id="shareBtn"><img src="" alt="" class="actionBtn"></button>
+        </div>
+    </body>
 </html>
