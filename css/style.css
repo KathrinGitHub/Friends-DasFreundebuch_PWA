@@ -14,28 +14,6 @@ html, .fullscreen {
   background: rgb(231, 72 ,72);
 }
 
-/* Center the content in the browser window */
-.container {
-  margin: auto;
-  text-align: center;
-}
-
-.custom_button {
-  background-color: rgb(232, 59, 59);
-  border: none;
-  color: white;
-  font-size: 4vw;
-  padding: 10px;
-  position:fixed;
-  bottom:0;
-  right:0;
-  left: 0;
-}
-
-.title {
-  font-size: 5vw;
-}
-
 .header {
   display: flex;
   background-color: rgb(231, 72 ,72);
@@ -51,7 +29,7 @@ html, .fullscreen {
 }
 
 .list {
-  background-color: rgb(229, 224, 224);
+  background-color: rgb(255, 255, 255);
 }
 
 .item {
@@ -59,6 +37,7 @@ html, .fullscreen {
   display: flex;
   flex-direction: row;
   align-items: center;
+  border-bottom: 1px solid rgb(231, 72 ,72);
 }
 
 img {
@@ -109,6 +88,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  visibility: collapse;
 }
 
 #shareBtn {
@@ -125,4 +105,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  visibility: collapse;
+}
+
+.actionBtn {
+  height: 2em;
+  width: 2em;
 }
