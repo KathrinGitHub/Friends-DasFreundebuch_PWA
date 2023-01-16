@@ -29,7 +29,7 @@ var items = document.getElementsByClassName('item');
 for(var i = 0; i < items.length; i++) {
     items[i].addEventListener('click', function() {
         var id = this.id;
-        parent.location.href = 'next.html';
+        parent.location.href = 'profile.html';
     });
 }
 

@@ -19,8 +19,40 @@ html, .fullscreen {
   background-color: rgb(231, 72 ,72);
   width: 100%;
   justify-content: center;
+  align-items: center;
   position: sticky;
   top: 0;
+}
+
+#profile {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 100%;
+}
+
+.nav{
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: min-content;
+  background-color: rgb(231, 72 ,72);
+  padding: 0.5em;
+  margin-right: 20%;
+}
+
+.nav > a {
+  width: 2em;
+  height: 2em;
+}
+
+.backIcon {
+  height: 2em;
+  width: 2em;
+  margin: 0em;
+  align-self: flex-start;
 }
 
 #ownProfile {
@@ -38,6 +70,18 @@ html, .fullscreen {
   flex-direction: row;
   align-items: center;
   border-bottom: 1px solid rgb(231, 72 ,72);
+}
+
+.description{
+  margin-left: 1em;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1em;
+  margin-right: 5em;
 }
 
 img {
