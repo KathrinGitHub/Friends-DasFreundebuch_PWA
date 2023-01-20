@@ -44,9 +44,17 @@ var items = document.getElementsByClassName('item');
 for(var i = 0; i < items.length; i++) {
     items[i].addEventListener('click', function() {
         var name = this.getElementsByClassName('name')[0].innerHTML;
-        parent.location.href = 'profile.html';
-        var profileName = document.getElementById('name');
-        profileName.innerHTML = name;
+        window.location.href = 'profile.html';
+        sessionStorage.setItem("name", name);
     });
 }
+
+// set name
+try {
+    var profileName = document.getElementById('name');
+    profileName.innerHTML = sessionStorage.getItem("name");
+} catch (error) {
+    
+}
+
 
