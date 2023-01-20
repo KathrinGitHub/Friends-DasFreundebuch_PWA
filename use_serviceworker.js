@@ -11,10 +11,10 @@ if ("serviceWorker" in navigator) {
         navigator.serviceWorker
             .register("serviceworker.js")
             .then(serviceWorker => {
-                console.log("Service Worker Lab 05 PWA registered: ", serviceWorker);
+                console.log("Service Worker Friends registered: ", serviceWorker);
             })
             .catch(error => {
-                console.error("Error registering the Service Worker  Lab 05 PWA: ", error);
+                console.error("Error registering the Service Worker Friends: ", error);
             });
     });
 }
