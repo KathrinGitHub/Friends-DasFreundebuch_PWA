@@ -176,4 +176,26 @@ img {
   color: rgb(231, 72 ,72);
   margin-top: 1em;
   margin-bottom: 1em;
+  align-self: center;
+}
+
+#qrCode {
+  height: 15em;
+  width: 15em;
+  align-self: center;
+}
+
+.qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#description {
+  margin-top: 5em;
+  margin-bottom: 1em;
+  font-size: large;
+  font-weight: bold;
+  color: rgb(231, 72 ,72);
 }

@@ -30,7 +30,7 @@ try {
         });
 
         fabShare.addEventListener('click', function() {
-            parent.location.href = 'commingSoon.html';
+            parent.location.href = 'qrcode.html';
         });
     });
 } catch (error) {
