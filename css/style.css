@@ -14,6 +14,10 @@ html, .fullscreen {
   background: rgb(231, 72 ,72);
 }
 
+#soon {
+  background:rgb(255, 255, 255);
+}
+
 .header {
   display: flex;
   background-color: rgb(231, 72 ,72);
@@ -59,7 +63,8 @@ html, .fullscreen {
   height: 2em;
   width: 2em;
   margin: 0em;
-  align-self: flex-end;
+  padding-top: 3%;
+  align-self: flex-start;
 }
 
 #ownProfile {
@@ -68,7 +73,7 @@ html, .fullscreen {
 }
 
 .list {
-  background-color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
   width: 100%;
 }
 
@@ -163,4 +168,12 @@ img {
 .actionBtn {
   height: 2em;
   width: 2em;
+}
+
+#soonText {
+  font-size: 3em;
+  font-weight: bold;
+  color: rgb(231, 72 ,72);
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
