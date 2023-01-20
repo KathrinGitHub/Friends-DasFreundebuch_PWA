@@ -18,6 +18,7 @@ var filesToCache = [
   'main.js',
   'manifest.json',
   'css/style.css',
+  'img/add_friend_icon.png',
   'img/add_icon.png',
   'img/back_icon.png',
   'img/down_icon.png',
@@ -27,7 +28,6 @@ var filesToCache = [
   'img/ic_launcher_own_icon_round.png',
   'img/more_icon.png',
   'img/qr_code_icon.png',
-  'img/share_icon.png',
   'webworker.js',
   'serviceworker.js'
 ];
@@ -69,4 +69,3 @@ self.addEventListener('fetch', event => {
       })
   );
 });
-
