@@ -2,7 +2,7 @@
 AUTHORS: Müslüm Atas & Mathias Knoll
 DESCRIPTION: A service worker is installed and activated, which is also able to retrieve cached files.
 LAST CHANGE: 17.12.2022
-*/
+
 
 //it creates a list of all the files to be cached
 //@cacheName: 	It is used to give a unique name to the cache und to update it
@@ -69,3 +69,4 @@ self.addEventListener('fetch', event => {
       })
   );
 });
+*/

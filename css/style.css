@@ -35,6 +35,13 @@ html, .fullscreen {
   min-width: 100%;
 }
 
+#soonNav {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 100%;
+}
+
 .nav{
   align-self: flex-start;
   display: flex;
@@ -45,6 +52,17 @@ html, .fullscreen {
   background-color: rgb(231, 72 ,72);
   padding: 0.5em;
   margin-right: 10%;
+}
+
+.editFlex{
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: min-content;
+  background-color: rgb(231, 72 ,72);
+  padding: 0.7em;
 }
 
 .nav > a {
@@ -60,8 +78,8 @@ html, .fullscreen {
 }
 
 .editIcon {
-  height: 2em;
-  width: 2em;
+  height: 1.5em;
+  width: 1.5em;
   margin: 0em;
   padding-top: 3%;
   align-self: flex-start;
