@@ -1,0 +1,28 @@
+name: PWA CI/CD with Webpack and Jest
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build PWA with Webpack
+        run: npm run build
+
+      - name: Run Jest Tests
+        run: npm test
