@@ -15,14 +15,16 @@
 
 #### Basis-Überprüfung der DOM-Elemente in Jest
 
-In diesem Abschnitt haben wir grundlegende Jest-Tests für unsere PWA implementiert, um sicherzustellen, dass wesentliche DOM-Elemente wie Buttons korrekt im DOM geladen werden. Diese Tests sind ein kritischer Teil der Qualitätssicherung unserer Anwendung.
+In diesem Abschnitt haben wir grundlegende Jest-Tests für unsere Progressive Web App (PWA) implementiert, um sicherzustellen, dass wesentliche DOM-Elemente wie Buttons und Profilinformationen korrekt im DOM geladen werden. 
 
-- **Verifizierung der DOM-Struktur:** Diese Tests bestätigen, dass die Grundelemente unserer Anwendung wie erwartet im DOM vorhanden sind.
-- **Frühzeitige Fehlererkennung:** Durch das Überprüfen der Grundelemente können wir Probleme frühzeitig in der Entwicklung erkennen und beheben.
+- **Verifizierung der DOM-Struktur:** Diese Tests bestätigen, dass die Grundelemente unserer Anwendung, einschließlich UI-Komponenten und Profildaten, wie erwartet im DOM vorhanden sind.
+- **Frühzeitige Fehlererkennung:** Durch das Überprüfen der Grundelemente und Inhalte können wir Probleme frühzeitig in der Entwicklung erkennen und beheben.
 
 #### Implementierte Tests:
 
 - `test('fabShare und fabAdd Elemente sind im DOM vorhanden')`: Überprüft, ob die Buttons `fabShare` und `fabAdd` im DOM geladen und vorhanden sind. Dies garantiert, dass die Benutzeroberfläche unserer Anwendung wie erwartet initialisiert wird.
+- `test('Profilelemente sind im DOM vorhanden')`: Stellt sicher, dass wesentliche Elemente der Profilseite wie Profilbild und Kategorien im DOM vorhanden sind. Dies bestätigt, dass die Profilinformationen korrekt angezeigt werden.
+
 
 
 #### Wozu dient Containerization in der Entwicklung und in CI/CD-Pipelines?
