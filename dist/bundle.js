@@ -1,0 +1,1 @@
+({939:function(){var a;a=window.navigator.userAgent.toLowerCase(),!/iphone|ipad|ipod/.test(a)||"standalone"in window.navigator&&window.navigator.standalone||this.setState({showInstallMessage:!0})}})[939]();

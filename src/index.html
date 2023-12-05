@@ -1,0 +1,73 @@
+<!--
+AUTHORS: Kathrin Hubmann & Sebastian Kurka
+DESCRIPTION: A digital friends book. 
+LAST CHANGE: 15.01.2023
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Friends - Das Freundebuch</title>
+        <script defer src="main.js"></script>
+        <script defer src="logic.js"></script>
+        <script defer src="use_serviceworker.js"></script>
+        <script defer src="use_webworker.js"></script>
+        <link rel="icon" href="img/ic_launcher_friends.png">
+        <link rel="manifest" href="manifest.json">
+
+        <meta name="application-name" content="Friends - Das Freundebuch">
+        <meta name="apple-mobile-web-app-title" content="Friends - Das Freundebuch" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="msapplication-starturl" content="index.html" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+        <link rel="apple-touch-icon" href="img/ic_launcher_friends.png">
+    </head>
+    <body class="fullscreen">
+        <div class="header">
+            <a href="ownProfile.html" ><img src="img/ic_launcher_own_icon_round.png" alt="Profile" class="profileIcon" id="ownProfile"></a>
+        </div>
+        <div class="list">
+            <div class="item">
+                <img src="img/ic_launcher_own_icon_round.png" alt="Profile" class="profileIcon" id="1">
+                <p class="name">Pasqual</p>
+            </div>
+            <div class="item">
+                <img src="img/ic_launcher_own_icon_round.png" alt="Profile" class="profileIcon" id="2">
+                <p class="name">Franz</p>
+            </div>
+            <div class="item">
+                <img src="img/ic_launcher_own_icon_round.png" alt="Profile" class="profileIcon" id="3">
+                <p class="name">Harald</p>
+            </div>
+            <div class="item">
+                <img src="img/ic_launcher_own_icon_round.png" alt="Profile" class="profileIcon" id="4">
+                <p class="name">Sebastian</p>
+            </div>
+            <div class="item">
+                <img src="img/ic_launcher_own_icon_round.png" alt="Profile" class="profileIcon" id="5">
+                <p class="name">Bence</p>
+            </div>
+            <div class="item">
+                <img src="img/ic_launcher_own_icon_round.png" alt="Profile" class="profileIcon" id="6">
+                <p class="name">Isabella</p>
+            </div>
+            <div class="item">
+                <img src="img/ic_launcher_own_icon_round.png" alt="Profile" class="profileIcon" id="7">
+                <p class="name">Elli</p>
+            </div>
+            <div class="item">
+                <img src="img/ic_launcher_own_icon_round.png" alt="Profile" class="profileIcon" id="8">
+                <p class="name">Tabea</p>
+            </div>
+        </div>
+        <div class="floatingActionButtons">
+            <button class="fab" id="moreBtn"><img src="img/more_icon.png" alt="" class="actionBtn" id="more"></button>
+            <button class="fabS" id="shareBtn"><img src="img/qr_code_icon.png" alt="" class="actionBtn"></button>
+            <button class="fabS" id="addBtn"><img src="img/add_friend_icon.png" alt="" class="actionBtn"></button>
+        </div>
+    </body>
+</html>
