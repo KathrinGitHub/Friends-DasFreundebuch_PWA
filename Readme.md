@@ -25,6 +25,18 @@ Zur Build-Automatisierung in einer Continuous Delivery-Pipeline für eine Progre
 * Durch automatisierte Tests wird sichergestellt, dass Tests in jeder Phase der Pipeline konsistent und wiederholbar durchgeführt werden.
 * Automatisierte Tests helfen, Fehler frühzeitig zu erkennen und zu beheben, was die Gesamtqualität der Anwendung verbessert.
 
+**Basis-Überprüfung der DOM-Elemente in Jest**
+
+In diesem Abschnitt haben wir grundlegende Jest-Tests für unsere PWA implementiert, um sicherzustellen, dass wesentliche DOM-Elemente wie Buttons korrekt im DOM geladen werden. Diese Tests sind ein kritischer Teil der Qualitätssicherung unserer Anwendung.
+
+- **Verifizierung der DOM-Struktur:** Diese Tests bestätigen, dass die Grundelemente unserer Anwendung wie erwartet im DOM vorhanden sind.
+- **Frühzeitige Fehlererkennung:** Durch das Überprüfen der Grundelemente können wir Probleme frühzeitig in der Entwicklung erkennen und beheben.
+
+**Implementierte Tests:**
+
+- `test('fabShare und fabAdd Elemente sind im DOM vorhanden')`: Überprüft, ob die Buttons `fabShare` und `fabAdd` im DOM geladen und vorhanden sind. Dies garantiert, dass die Benutzeroberfläche unserer Anwendung wie erwartet initialisiert wird.
+
+
 **Wozu dient Containerization in der Entwicklung und in CI/CD-Pipelines?**
 
 * Container ermöglichen die konsistente Bereitstellung von Anwendungen, unabhängig von der Umgebung.
@@ -63,3 +75,5 @@ IoC kann in CI/CD-Pipelines unterstützen, indem es die Abhängigkeiten und Konf
 Testumgebung für Jest-Tests.
 * Container-Orchestrierungssystem für die Bereitstellung in containerisierten Umgebungen.
 * Staging-Umgebung für Tests vor der Produktionsbereitstellung.
+
+
