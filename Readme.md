@@ -6,6 +6,7 @@
 * Einbindung von Node.js-Build-Tools. In diesem Fall Webpack und babel, um den Code zu optimieren und für die Produktion vorzubereiten.
 * Integration von Jest für automatisierte Tests in den Build-Prozess.
 
+
 #### Welchen Vorteil liefert Testautomatisierung in CI/CD-Pipelines?
 
 * Ermöglichen eine schnellere Identifizierung von Fehlern während des Entwicklungsprozesses.
@@ -30,9 +31,13 @@ In diesem Abschnitt haben wir grundlegende Jest-Tests für unsere PWA implementi
 * Bieten eine isolierte Umgebung für Anwendungen, was potenzielle Konflikte mit anderen Anwendungen oder Abhängigkeiten minimiert.
 * Anwendungen können leicht skaliert werden, indem mehrere Instanzen auf verschiedenen Umgebungen bereitgestellt werden.
 
+#### Implementierte Container:
+
+- Ubuntu Container erstellt um immer in der gleichen Container testen zu können.
+
 #### Wie kann Inversion of Control (IoC) dabei unterstützen?
 
-Indem es die Abhängigkeiten und Konfigurationen zentralisiert und den Kontrollfluss umkehrt. erleichtern IoC die Verwaltung von Ressourcen und die Skalierung der Infrastruktur, vorallem in containerisierten Umgebungen.
+Indem es die Abhängigkeiten und Konfigurationen zentralisiert und den Kontrollfluss umkehrt, erleichtern IoC die Verwaltung von Ressourcen und die Skalierung der Infrastruktur, vorallem in containerisierten Umgebungen.
 
 #### Welche Schritte in einer CI/CD-Pipeline müssen beachtet werden?
 
