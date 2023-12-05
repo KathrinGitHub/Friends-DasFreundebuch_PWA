@@ -13,7 +13,7 @@ var filesToCache = [
   'index.html',
   'profile.html',
   'ownProfile.html',
-  'commingSoon.html',
+  'comingSoon.html',
   'qrcode.html',
   'logic.js',
   'main.js',
