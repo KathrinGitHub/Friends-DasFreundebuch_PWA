@@ -2,7 +2,7 @@
 AUTHORS: Müslüm Atas & Mathias Knoll
 DESCRIPTION: A service worker is installed and activated, which is also able to retrieve cached files.
 LAST CHANGE: 17.12.2022
-
+*/
 
 //it creates a list of all the files to be cached
 //@cacheName: 	It is used to give a unique name to the cache und to update it
@@ -14,6 +14,7 @@ var filesToCache = [
   'profile.html',
   'ownProfile.html',
   'commingSoon.html',
+  'qrcode.html',
   'logic.js',
   'main.js',
   'manifest.json',
@@ -28,8 +29,15 @@ var filesToCache = [
   'img/ic_launcher_own_icon_round.png',
   'img/more_icon.png',
   'img/qr_code_icon.png',
+  'img/qr_code.png',
+  'img/lab05pwa48.png',
+  'img/lab05pwa72.png',
+  'img/lab05pwa96.png',
+  'img/lab05pwa144.png',
   'webworker.js',
-  'serviceworker.js'
+  'serviceworker.js',
+  'use_serviceworker.js',
+  'use_webworker.js'
 ];
 
 // Install the service worker asynchronously, which then actually caches all the files contained in the above list
@@ -69,4 +77,3 @@ self.addEventListener('fetch', event => {
       })
   );
 });
-*/
