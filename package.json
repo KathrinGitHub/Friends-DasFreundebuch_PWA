@@ -4,6 +4,7 @@
     "test": "jest"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.5",
     "@babel/preset-env": "^7.23.5",
     "@testing-library/dom": "^9.3.3",
     "@testing-library/jest-dom": "^6.1.5",
