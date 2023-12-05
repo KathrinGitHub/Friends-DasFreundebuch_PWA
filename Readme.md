@@ -68,4 +68,13 @@ Indem es die Abhängigkeiten und Konfigurationen zentralisiert und den Kontrollf
 * Container-Orchestrierungssystem für die Bereitstellung in containerisierten Umgebungen.
 * Staging-Umgebung für Tests vor der Produktionsbereitstellung.
 
+#### Antipatterns
+
+* **Works on my mashine** -> build in Github Workflows
+* **IDE Buid only** -> build in Github Workflows
+* **Broken Build** -> build in Github Workflows
+* **Bloated Build** -> kann passieren wenn das Projekt größer wird
+* **Myopic Environment** -> Github workflow test, not working with Node v14 but with v18.
+*  **Polluted Environment**
+*  **Scheduled Builds** 
 
